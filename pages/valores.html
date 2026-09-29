@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valores CREHO · INVELA Corp</title>
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/valores.css">
+</head>
+<body>
+
+  <div id="app-topbar"></div>
+  <div id="app-header"></div>
+  <div id="app-nav"></div>
+
+  <!-- ===== CREHO — animación (réplica del PPT ADN INVELA) ===== -->
+  <section class="creho" data-creho>
+    <div class="creho__deco"></div>
+    <div class="creho__in">
+      <p class="creho__eyebrow">ADN INVELA</p>
+      <h1 class="creho__lead">Nuestros Valores</h1>
+      <p class="creho__leadx">Cinco pilares que definen quiénes somos y guían cada decisión: <strong>C·R·E·H·O</strong>.</p>
+
+      <!-- Escenario: ícono + palabra + descripción del valor activo -->
+      <div class="creho__stage">
+        <div class="creho__slide is-active" style="--accent:#7CC0E8;">
+          <div class="creho__badge"><img src="../assets/img/valores/calidad.png" alt="Calidad"></div>
+          <div class="creho__word2"><span class="hl">C</span>alidad</div>
+          <p class="creho__desc">Constructiva como base de cada proyecto.</p>
+        </div>
+        <div class="creho__slide" style="--accent:#6FD0A6;">
+          <div class="creho__badge"><img src="../assets/img/valores/respeto.png" alt="Respeto"></div>
+          <div class="creho__word2"><span class="hl">R</span>espeto</div>
+          <p class="creho__desc">Hacia nuestros clientes, colaboradores y medio ambiente.</p>
+        </div>
+        <div class="creho__slide" style="--accent:#F2C14E;">
+          <div class="creho__badge"><img src="../assets/img/valores/excelencia.png" alt="Excelencia"></div>
+          <div class="creho__word2"><span class="hl">E</span>xcelencia</div>
+          <p class="creho__desc">En la ejecución de nuestras funciones.</p>
+        </div>
+        <div class="creho__slide" style="--accent:#B49CE6;">
+          <div class="creho__badge"><img src="../assets/img/valores/honestidad.png" alt="Honestidad"></div>
+          <div class="creho__word2"><span class="hl">H</span>onestidad</div>
+          <p class="creho__desc">Actuando con transparencia, integridad y coherencia en cada decisión.</p>
+        </div>
+        <div class="creho__slide" style="--accent:#F2A65A;">
+          <div class="creho__badge"><img src="../assets/img/valores/optimismo.svg" alt="Optimismo"></div>
+          <div class="creho__word2"><span class="hl">O</span>ptimismo</div>
+          <p class="creho__desc">Para superar los retos positivamente, con confianza y resiliencia.</p>
+        </div>
+      </div>
+
+      <!-- Palabra CREHO: cada letra se expande a su valor -->
+      <div class="creho__row">
+        <div class="creho__unit is-active"><span class="creho__L">C</span><span class="creho__rest">alidad</span></div>
+        <div class="creho__unit"><span class="creho__L">R</span><span class="creho__rest">espeto</span></div>
+        <div class="creho__unit"><span class="creho__L">E</span><span class="creho__rest">xcelencia</span></div>
+        <div class="creho__unit"><span class="creho__L">O</span><span class="creho__rest">ptimismo</span></div>
+        <div class="creho__unit"><span class="creho__L">H</span><span class="creho__rest">onestidad</span></div>
+
+      </div>
+
+      <div class="creho__ctrl">
+        <button class="creho__play" aria-label="Pausar/Reproducir"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg></button>
+        <div class="creho__dots">
+          <button class="creho__dot is-active" aria-label="Calidad"></button>
+          <button class="creho__dot" aria-label="Respeto"></button>
+          <button class="creho__dot" aria-label="Excelencia"></button>
+          <button class="creho__dot" aria-label="Honestidad"></button>
+          <button class="creho__dot" aria-label="Optimismo"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Detalle de cada valor ===== -->
+  <section class="section"><div class="wrap">
+    <div class="section__head">
+      <div class="section__titles">
+        <div class="section__badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div><h2 class="section__h">Cada valor en profundidad</h2><p class="section__d">Cómo vivimos CREHO en el día a día</p></div>
+      </div>
+    </div>
+
+    <!-- Calidad -->
+    <div class="vdetail reveal" id="calidad">
+      <div class="vdetail__media" style="background:linear-gradient(135deg,#EAF4FB,#D9EBF6);">
+        <span class="vdetail__ghost" style="color:#01456A;">C</span>
+        <img class="vdetail__img" src="../assets/img/valores/calidad.png" alt="Calidad">
+      </div>
+      <div>
+        <div class="eyebrow">Valor 01</div>
+        <h3 class="vdetail__k" style="color:#01456A;">Calidad</h3>
+        <p class="vdetail__p">Constructiva como base de cada proyecto. Nos comprometemos a entregar resultados que superen las expectativas, con atención al detalle y mejora continua en todo lo que hacemos.</p>
+        <div class="vdetail__list">
+          <div class="vdetail__li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#01456A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Estándares de excelencia en cada entregable</div>
+          <div class="vdetail__li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#01456A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Mejora continua de procesos y resultados</div>
+          <div class="vdetail__li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#01456A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Buenas prácticas y certificaciones</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Respeto -->
+    <div class="vdetail reveal" id="respeto">
+      <div class="vdetail__media" style="background:linear-gradient(135deg,#E9F8F0,#D6F1E4);">
+        <span class="vdetail__ghost" style="color:#1E8E6A;">R</span>
+        <img class="vdetail__img" src="../assets/img/valores/respeto.png" alt="Respeto">
+      </div>
+      <div>
+        <div class="eyebrow">Valor 02</div>
+        <h3 class="vdetail__k" style="color:#1E8E6A;">Respeto</h3>
+        <p class="vdetail__p">Hacia nuestros clientes, colaboradores y medio ambiente. Valoramos la diversidad, la inclusión y el trato digno como pilares de nuestra cultura organizacional.</p>
+        <div class="vdetail__list">
+          <div class="vdetail__li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E8E6A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Trato digno y equitativo para todos</div>
+          <div class="vdetail__li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E8E6A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Valoración de la diversidad e inclusión</div>
+          <div class="vdetail__li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1E8E6A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Compromiso con el medio ambiente</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Excelencia -->
+    <div class="vdetail reveal" id="excelencia">
+      <div class="vdetail__media" style="background:linear-gradient(135deg,#FEF7E6,#FCEFCB);">
+        <span class="vdetail__ghost" style="color:#B8761B;">E</span>
+        <img class="vdetail__img" src="../assets/img/valores/excelencia.png" alt="Excelencia">
+      </div>
+      <div>
+        <div class="eyebrow">Valor 03</div>
+        <h3 class="vdetail__k" style="color:#B8761B;">Excelencia</h3>
+        <p class="vdetail__p">En la ejecución de nuestras funciones. Buscamos la perfección en cada tarea, superando los límites de lo ordinario para lograr resultados extraordinarios.</p>
+        <div class="vdetail__list">
+          <div class="vdetail__li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B8761B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Superación constante de metas</div>
+          <div class="vdetail__li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B8761B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Innovación como motor de crecimiento</div>
+          <div class="vdetail__li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B8761B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Aprendizaje y desarrollo continuo</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Honestidad -->
+    <div class="vdetail reveal" id="honestidad">
+      <div class="vdetail__media" style="background:linear-gradient(135deg,#F1ECFB,#E5DBF6);">
+        <span class="vdetail__ghost" style="color:#7C3AED;">H</span>
+        <img class="vdetail__img" src="../assets/img/valores/honestidad.png" alt="Honestidad">
+      </div>
+      <div>
+        <div class="eyebrow">Valor 04</div>
+        <h3 class="vdetail__k" style="color:#7C3AED;">Honestidad</h3>
+        <p class="vdetail__p">Actuando con transparencia, integridad y coherencia en cada decisión. La confianza se construye con acciones, y nosotros la cultivamos día a día.</p>
+        <div class="vdetail__list">
+          <div class="vdetail__li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Transparencia en comunicación y procesos</div>
+          <div class="vdetail__li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Integridad en cada negociación</div>
+          <div class="vdetail__li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Coherencia entre lo que decimos y hacemos</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optimismo -->
+    <div class="vdetail reveal" id="optimismo">
+      <div class="vdetail__media" style="background:linear-gradient(135deg,#FEF1E7,#FCE1CE);">
+        <span class="vdetail__ghost" style="color:#C0392B;">O</span>
+        <img class="vdetail__img" src="../assets/img/valores/optimismo.svg" alt="Optimismo">
+      </div>
+      <div>
+        <div class="eyebrow">Valor 05</div>
+        <h3 class="vdetail__k" style="color:#C0392B;">Optimismo</h3>
+        <p class="vdetail__p">Para superar los retos positivamente, con confianza y resiliencia. Creemos que cada desafío es una oportunidad para crecer y transformarnos.</p>
+        <div class="vdetail__list">
+          <div class="vdetail__li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C0392B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Actitud positiva ante los desafíos</div>
+          <div class="vdetail__li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C0392B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Resiliencia y adaptabilidad</div>
+          <div class="vdetail__li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C0392B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Confianza en el equipo y el futuro</div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <div id="app-footer"></div>
+
+  <script>window.PAGE = { active: 'valores', base: '../' };</script>
+  <script src="../assets/js/site.config.js"></script>
+  <script src="../assets/js/components.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soporte TI · INVELA Corp</title>
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+  <div id="app-topbar"></div>
+  <div id="app-header"></div>
+  <div id="app-nav"></div>
+
+  <section class="phero">
+    <div class="phero__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+    <div class="phero__in">
+      <div class="crumbs"><a href="../index.html">Inicio</a><span>/</span><span class="cur">Soporte TI</span></div>
+      <h1 class="phero__title">Centro de Soporte TI</h1>
+      <p class="phero__desc">Resolvemos tus dudas y problemas tecnológicos. Consulta las guías, crea un ticket o contáctanos directamente.</p>
+    </div>
+  </section>
+
+  <!-- Contacto rápido -->
+  <section class="section" id="contacto"><div class="wrap">
+    <div class="grid grid--3">
+      <div class="contact reveal d1"><div class="contact__ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></div><div class="contact__t">Email</div><div class="contact__x">soporte@invela.com</div></div>
+      <div class="contact reveal d2"><div class="contact__ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="contact__t">Teléfono</div><div class="contact__x">Ext. 5000 · +507 300-0000</div></div>
+      <div class="contact reveal d3"><div class="contact__ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="contact__t">Horario</div><div class="contact__x">Lun–Vie · 7:00 AM – 6:00 PM</div></div>
+    </div>
+  </div></section>
+
+  <!-- Ticket + Mis tickets -->
+  <section class="section--alt" id="ticket"><div class="section wrap">
+    <div class="split" style="align-items:start;">
+      <div>
+        <div class="section__head">
+          <div class="section__titles">
+            <div class="section__badge" style="background:#FBE7E4;color:#C0392B;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg></div>
+            <div><h2 class="section__h">Crear Ticket de Soporte</h2><p class="section__d">Describe tu problema y te ayudaremos</p></div>
+          </div>
+        </div>
+        <div class="card" style="padding:var(--sp-6);">
+          <form data-demo class="form">
+            <div class="field"><label class="field__label">Tipo de solicitud</label>
+              <select class="select"><option>Problema con equipo</option><option>Acceso a sistemas</option><option>Software / Aplicaciones</option><option>Red / Conectividad</option><option>Correo electrónico</option><option>Solicitud de equipo nuevo</option><option>Otro</option></select>
+            </div>
+            <div class="field"><label class="field__label">Prioridad</label>
+              <select class="select"><option>Normal</option><option>Alta</option><option>Crítica</option></select>
+            </div>
+            <div class="field"><label class="field__label">Asunto</label><input class="input" type="text" placeholder="Breve descripción del problema"></div>
+            <div class="field"><label class="field__label">Descripción detallada</label><textarea class="textarea" placeholder="Describe tu problema con el mayor detalle posible…"></textarea></div>
+            <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
+              <button class="btn btn--primary" type="submit"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Enviar ticket</button>
+              <span class="badge badge--ok" data-demo-note hidden>✓ Ticket creado (demo). Nº TK-2026-1206</span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <aside>
+        <div class="section__head" style="margin-bottom:var(--sp-4);">
+          <div class="section__titles"><div><h2 class="section__h" style="font-size:18px;">Mis Tickets</h2></div></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div class="card" style="padding:var(--sp-4);"><div style="display:flex;justify-content:space-between;margin-bottom:6px;"><strong style="font-size:13px;">TK-2026-1205</strong><span class="badge badge--ok">Resuelto</span></div><div style="font-size:14px;font-weight:600;color:var(--ink);">VPN no conecta desde casa</div><div style="font-size:12px;color:var(--text-mute);margin-top:4px;">Hace 3 días</div></div>
+          <div class="card" style="padding:var(--sp-4);"><div style="display:flex;justify-content:space-between;margin-bottom:6px;"><strong style="font-size:13px;">TK-2026-1198</strong><span class="badge badge--warn">En progreso</span></div><div style="font-size:14px;font-weight:600;color:var(--ink);">Solicitud de monitor adicional</div><div style="font-size:12px;color:var(--text-mute);margin-top:4px;">Hace 5 días</div></div>
+          <div class="card" style="padding:var(--sp-4);"><div style="display:flex;justify-content:space-between;margin-bottom:6px;"><strong style="font-size:13px;">TK-2026-1190</strong><span class="badge badge--ok">Resuelto</span></div><div style="font-size:14px;font-weight:600;color:var(--ink);">Acceso a Power BI</div><div style="font-size:12px;color:var(--text-mute);margin-top:4px;">Hace 1 semana</div></div>
+        </div>
+      </aside>
+    </div>
+  </div></section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq"><div class="wrap">
+    <div class="section__head">
+      <div class="section__titles">
+        <div class="section__badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+        <div><h2 class="section__h">Preguntas Frecuentes</h2><p class="section__d">Resuelve las dudas más comunes</p></div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq__item is-open"><div class="faq__q">¿Cómo me conecto a la VPN corporativa?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div><div class="faq__a">Descarga el cliente FortiClient desde el portal de aplicaciones, ingresa la dirección vpn.invela.com y usa tus credenciales corporativas. En tu primer acceso deberás activar la autenticación de dos factores (MFA).</div></div>
+      <div class="faq__item"><div class="faq__q">Olvidé mi contraseña, ¿cómo la recupero?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div><div class="faq__a">Restablece tu contraseña desde portal.invela.com/reset o contacta a Soporte TI al ext. 5000. Necesitarás verificar tu identidad con tu correo alternativo o teléfono registrado.</div></div>
+      <div class="faq__item"><div class="faq__q">¿Cómo solicito acceso a un nuevo sistema o aplicación?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div><div class="faq__a">Crea un ticket seleccionando “Acceso a sistemas”. Tu solicitud será evaluada por tu supervisor y el equipo de TI. El tiempo estimado de respuesta es de 24–48 horas hábiles.</div></div>
+      <div class="faq__item"><div class="faq__q">Mi computadora está muy lenta, ¿qué puedo hacer?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div><div class="faq__a">Reinicia tu equipo, cierra las aplicaciones que no uses, limpia archivos temporales y verifica que Windows Update esté al día. Si el problema persiste, crea un ticket y nuestro equipo lo revisará.</div></div>
+      <div class="faq__item"><div class="faq__q">¿Cómo configuro la impresora de mi piso?<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div><div class="faq__a">Las impresoras corporativas se instalan por red. Ve a Configuración &gt; Impresoras &gt; “Agregar impresora”. Si no aparece, crea un ticket con el nombre de la impresora y tu ubicación.</div></div>
+    </div>
+  </div></section>
+
+  <div id="app-footer"></div>
+  <script>window.PAGE = { active: 'soporte', base: '../' };</script>
+  <script src="../assets/js/site.config.js"></script>
+  <script src="../assets/js/components.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

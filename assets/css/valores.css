@@ -1,0 +1,88 @@
+/* ============================================================
+   INVELA Corp - Sección VALORES (CREHO)
+   Recreación fiel del PPT "ADN INVELA": fondo navy, DM Sans,
+   letras que se expanden a la palabra + ícono plano + descripción.
+   ============================================================ */
+
+.creho {
+  background:
+    radial-gradient(1100px 520px at 50% -10%, #0a4a70 0%, transparent 60%),
+    linear-gradient(160deg, #142F4C 0%, #043756 100%);
+  color: #fff;
+  font-family: var(--font-creho);
+  padding: var(--sp-16) var(--sp-6) var(--sp-12);
+  position: relative;
+  overflow: hidden;
+}
+.creho__deco { position: absolute; inset: 0; pointer-events: none; opacity: .5;
+  background-image: radial-gradient(circle at 15% 25%, rgba(255,255,255,.06) 0 2px, transparent 3px),
+                    radial-gradient(circle at 85% 70%, rgba(255,255,255,.05) 0 3px, transparent 4px),
+                    radial-gradient(circle at 70% 15%, rgba(255,255,255,.05) 0 2px, transparent 3px); }
+.creho__in { position: relative; z-index: 1; max-width: 1080px; margin: 0 auto; text-align: center; }
+
+.creho__eyebrow { font-family: var(--font-creho); font-weight: 700; letter-spacing: .34em; text-transform: uppercase; font-size: 12px; color: rgba(255,255,255,.6); margin-bottom: 10px; }
+.creho__lead { font-family: var(--font-creho); font-weight: 700; font-size: clamp(22px, 3vw, 30px); margin-bottom: 6px; }
+.creho__leadx { color: rgba(255,255,255,.62); font-size: 14px; max-width: 560px; margin: 0 auto var(--sp-10); }
+
+/* --------- Escenario del valor activo (ícono + descripción) --------- */
+.creho__stage { min-height: 232px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: var(--sp-8); }
+.creho__slide { display: none; flex-direction: column; align-items: center; }
+.creho__slide.is-active { display: flex; animation: crehoIn .6s ease; }
+@keyframes crehoIn { from { opacity: 0; transform: translateY(14px) scale(.98); } to { opacity: 1; transform: none; } }
+
+.creho__badge { width: 120px; height: 120px; border-radius: 50%; background: rgba(255,255,255,.96); display: flex; align-items: center; justify-content: center; box-shadow: 0 18px 40px rgba(0,0,0,.28); margin-bottom: var(--sp-5); }
+.creho__badge img { width: 74px; height: 74px; object-fit: contain; }
+/* La palabra grande vive en la fila que se expande (desktop). En móvil se muestra aquí. */
+.creho__word2 { display: none; font-family: var(--font-creho); font-weight: 700; font-size: clamp(30px, 7vw, 42px); line-height: 1; margin-bottom: 12px; color: #fff; }
+.creho__word2 .hl { color: var(--accent, #7CC0E8); }
+.creho__desc { font-family: var(--font-creho); font-weight: 400; font-size: clamp(15px, 1.9vw, 19px); color: rgba(255,255,255,.85); max-width: 620px; line-height: 1.6; }
+
+/* --------- Palabra CREHO con letras que se expanden --------- */
+.creho__row { display: flex; justify-content: center; align-items: baseline; gap: clamp(8px, 2vw, 26px); flex-wrap: wrap; }
+.creho__unit { display: flex; align-items: baseline; cursor: pointer; user-select: none; }
+.creho__L {
+  font-family: var(--font-creho); font-weight: 700; line-height: 1;
+  font-size: clamp(46px, 8vw, 104px);
+  color: rgba(255,255,255,.32);
+  transition: color .4s ease, text-shadow .4s ease;
+}
+.creho__rest {
+  font-family: var(--font-creho); font-weight: 700; line-height: 1;
+  font-size: clamp(46px, 8vw, 104px);
+  color: #fff;
+  max-width: 0; overflow: hidden; opacity: 0; white-space: nowrap;
+  transition: max-width .5s cubic-bezier(.7,0,.2,1), opacity .2s ease;
+}
+.creho__unit.is-active .creho__L { color: #fff; text-shadow: 0 6px 30px rgba(124,192,232,.5); }
+.creho__unit.is-active .creho__rest { max-width: 640px; opacity: 1; }
+.creho__unit:not(.is-active):hover .creho__L { color: rgba(255,255,255,.7); }
+
+/* --------- Controles (progreso + play/pausa) --------- */
+.creho__ctrl { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: var(--sp-8); }
+.creho__dots { display: flex; gap: 8px; }
+.creho__dot { width: 9px; height: 9px; border-radius: 50%; background: rgba(255,255,255,.28); border: none; padding: 0; transition: var(--transition); }
+.creho__dot.is-active { background: #fff; transform: scale(1.25); }
+.creho__play { width: 34px; height: 34px; border-radius: 50%; border: 1px solid rgba(255,255,255,.3); background: rgba(255,255,255,.08); color: #fff; display: flex; align-items: center; justify-content: center; transition: var(--transition); }
+.creho__play:hover { background: rgba(255,255,255,.18); }
+
+/* --------- Detalle de valores (tarjetas alternas) --------- */
+.vdetail { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-10); align-items: center; padding: var(--sp-8); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--sh-md); border: 1px solid var(--border); margin-bottom: var(--sp-8); }
+.vdetail:nth-child(even) .vdetail__media { order: 2; }
+.vdetail__media { display: flex; align-items: center; justify-content: center; padding: var(--sp-8); border-radius: var(--r-lg); position: relative; }
+.vdetail__ghost { position: absolute; font-family: var(--font-creho); font-weight: 700; font-size: clamp(90px, 14vw, 168px); opacity: .12; line-height: 1; }
+.vdetail__img { width: 120px; height: 120px; object-fit: contain; position: relative; z-index: 1; filter: drop-shadow(0 14px 24px rgba(20,47,76,.18)); }
+.vdetail__k { font-family: var(--font-title); font-stretch: var(--title-stretch); font-weight: 800; font-size: clamp(26px, 3vw, 34px); margin-bottom: 10px; }
+.vdetail__p { font-size: 15px; color: var(--text-soft); line-height: 1.8; margin-bottom: var(--sp-4); }
+.vdetail__list { display: flex; flex-direction: column; gap: 9px; }
+.vdetail__li { display: flex; align-items: flex-start; gap: 10px; font-size: var(--fs-sm); color: var(--text-soft); }
+.vdetail__li svg { flex-shrink: 0; margin-top: 2px; }
+
+@media (max-width: 768px) {
+  .vdetail { grid-template-columns: 1fr; padding: var(--sp-6); gap: var(--sp-5); }
+  .vdetail:nth-child(even) .vdetail__media { order: 0; }
+  .creho__rest { display: none; }            /* en móvil, la palabra completa va en el escenario */
+  .creho__slide.is-active .creho__word2 { display: block; }
+  .creho__row { gap: 12px; }
+  .creho__L { color: rgba(255,255,255,.5); }
+  .creho__unit.is-active .creho__L { color: #fff; }
+}

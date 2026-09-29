@@ -1,0 +1,15 @@
+Coloca aquí los PDF de las políticas de INVELA Corp.
+
+Sugerencia de nombres (coinciden con los enlaces de pages/documentacion.html):
+  - codigo-de-conducta.pdf
+  - asistencia-y-puntualidad.pdf
+  - trabajo-remoto-hibrido.pdf
+  - seguridad-de-la-informacion.pdf
+  - anti-soborno-corrupcion.pdf
+  - vacaciones-y-ausencias.pdf
+
+Luego, en pages/documentacion.html, reemplaza href="#" de cada política por
+la ruta del PDF, por ejemplo: href="../data/politicas/codigo-de-conducta.pdf"
+
+En SharePoint: sube estos PDF a una biblioteca de documentos y apunta los
+enlaces a esa biblioteca.

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Directorio · INVELA Corp</title>
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+  <div id="app-topbar"></div>
+  <div id="app-header"></div>
+  <div id="app-nav"></div>
+
+  <section class="phero">
+    <div class="phero__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+    <div class="phero__in">
+      <div class="crumbs"><a href="../index.html">Inicio</a><span>/</span><span class="cur">Directorio</span></div>
+      <h1 class="phero__title">Directorio de Colaboradores</h1>
+      <p class="phero__desc">Encuentra información de contacto de los miembros del equipo INVELA, organizados por departamento.</p>
+    </div>
+  </section>
+
+  <section class="section"><div class="wrap" id="dir-scope">
+    <div class="searchbar">
+      <div class="searchbar__field">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" placeholder="Buscar por nombre, cargo o departamento…" data-filter-input="#dir-scope">
+      </div>
+      <a class="searchbar__btn" href="#gerencia">Gerencia</a>
+      <a class="searchbar__btn" href="#tecnologia">Tecnología</a>
+      <a class="searchbar__btn" href="#finanzas">Finanzas</a>
+      <a class="searchbar__btn" href="#operaciones">Operaciones</a>
+    </div>
+
+    <div id="gerencia" style="margin-bottom:var(--sp-8);">
+      <h2 class="section__h" style="font-size:17px;margin-bottom:var(--sp-4);">Gerencia</h2>
+      <div class="people">
+        <div class="person" data-search="Javier Luna ceo fundador gerencia"><div class="person__av" style="background:#142F4C;">JR</div><div class="person__name">Javier Luna</div><div class="person__role">CEO &amp; Fundador</div><span class="person__tag">Gerencia</span></div>
+        <div class="person" data-search=" Paula García coo gerencia"><div class="person__av" style="background:#01456A;">AM</div><div class="person__name"> Paula García</div><div class="person__role">COO</div><span class="person__tag">Gerencia</span></div>
+        <div class="person" data-search="carmen lopez gerente operaciones"><div class="person__av" style="background:#C0392B;">CL</div><div class="person__name">Ricardo Dardon</div><div class="person__role">Gerente de Operaciones</div><span class="person__tag">Gerencia</span></div>
+      </div>
+    </div>
+
+    <div id="tecnologia" style="margin-bottom:var(--sp-8);">
+      <h2 class="section__h" style="font-size:17px;margin-bottom:var(--sp-4);">Tecnología</h2>
+      <div class="people">
+        <div class="person" data-search="laura gonzalez cto tecnologia"><div class="person__av" style="background:#7C3AED;">LG</div><div class="person__name">Marvin Ola</div><div class="person__role">CTO</div><span class="person__tag">Tecnología</span></div>
+      </div>
+    </div>
+  </div></section>
+
+  <div id="app-footer"></div>
+  <script>window.PAGE = { active: 'directorio', base: '../' };</script>
+  <script src="../assets/js/site.config.js"></script>
+  <script src="../assets/js/components.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
